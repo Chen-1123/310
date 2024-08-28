@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>名人名言展示</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .quote {
+            background-color: #fff;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            quotes: "“" "”";
+        }
+        .quote:before {
+            content: open-quote;
+            font-size: 4em;
+            line-height: .1em;
+            vertical-align: -.4em;
+            color: #4CAF50;
+        }
+        .quote:after {
+            content: close-quote;
+            font-size: 4em;
+            line-height: .1em;
+            vertical-align: -.55em;
+            color: #4CAF50;
+        }
+        .quote p {
+            display: inline;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .author {
+            text-align: right;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quote">
+            <p>“只有用心去看，才能看到真实。事物的真相只有用心灵才能看到。”</p>
+            <span class="author">——《小王子》</span>
+        </div>
+        <div class="quote">
+            <p>“星星之所以美丽，是因为有一朵看不见的花。”</p>
+            <span class="author">——《小王子》</span>
+        </div>
+        <div class="quote">
+            <p>“重要的不是活了多少年，而是这些年怎么活。”</p>
+            <span class="author">——乔治·奥威尔</span>
+        </div>
+        <!-- 更多名言可以继续添加 -->
+    </div>
+    <footer>
+        <p>© 2024 名人名言展示</p>
+    </footer>
+</body>
+</html>
