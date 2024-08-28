@@ -6,66 +6,77 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f0f5;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #333;
+            background: linear-gradient(135deg, #4CAF50, #2E8B57);
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
         }
         .header h1 {
             margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         .container {
-            width: 80%;
-            margin: 30px auto;
+            width: 75%;
+            margin: 50px auto;
             overflow: hidden;
         }
         .quote {
             background-color: #fff;
-            border-left: 4px solid #4CAF50;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            border-left: 6px solid #4CAF50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             margin: 20px 0;
             position: relative;
-            quotes: "“" "”";
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .quote:hover {
+            transform: scale(1.02);
         }
         .quote:before {
             content: open-quote;
             font-size: 4em;
-            line-height: .1em;
+            line-height: 0.1em;
             margin-right: 0.25em;
-            vertical-align: -.4em;
+            vertical-align: -0.4em;
             color: #4CAF50;
         }
         .quote:after {
             content: close-quote;
             font-size: 4em;
-            line-height: .1em;
+            line-height: 0.1em;
             margin-left: 0.25em;
-            vertical-align: -.35em;
+            vertical-align: -0.35em;
             color: #4CAF50;
         }
         .quote p {
             display: inline;
-            font-size: 1.2em;
+            font-size: 1.4em;
             color: #333;
+            font-style: italic;
         }
         .author {
             text-align: right;
             display: block;
-            margin-top: 10px;
+            margin-top: 15px;
             font-weight: bold;
-            color: #4CAF50;
+            color: #2E8B57;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #333;
             color: #fff;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
     </style>
 </head>
